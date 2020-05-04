@@ -10,9 +10,15 @@
     "cli-ck": "^0.2.1",
     "css-tree": "^1.0.0-alpha23",
     "mime-types": "^2.1.17",
-    "mz": "^2.6.0"
+    "mz": "^2.6.0",
+    "snyk": "^1.317.0"
   },
   "bin": {
     "myfonts-cleanup": "./cli.js"
-  }
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepare": "yarn run snyk-protect"
+  },
+  "snyk": true
 }
